@@ -2,6 +2,12 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "coverlet.collector/3.2.0": {
+        "type": "package",
+        "build": {
+          "build/netstandard1.0/coverlet.collector.targets": {}
+        }
+      },
       "Microsoft.CodeCoverage/17.7.1": {
         "type": "package",
         "compile": {
@@ -11,7 +17,8 @@
           "lib/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
         },
         "build": {
-          "build/netstandard2.0/_._": {}
+          "build/netstandard2.0/Microsoft.CodeCoverage.props": {},
+          "build/netstandard2.0/Microsoft.CodeCoverage.targets": {}
         }
       },
       "Microsoft.NET.Test.Sdk/17.7.1": {
@@ -27,10 +34,11 @@
           "lib/netcoreapp3.1/_._": {}
         },
         "build": {
-          "build/netcoreapp3.1/_._": {}
+          "build/netcoreapp3.1/Microsoft.NET.Test.Sdk.props": {},
+          "build/netcoreapp3.1/Microsoft.NET.Test.Sdk.targets": {}
         },
         "buildMultiTargeting": {
-          "buildMultiTargeting/_._": {}
+          "buildMultiTargeting/Microsoft.NET.Test.Sdk.props": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -298,7 +306,7 @@
           }
         },
         "build": {
-          "build/netcoreapp3.1/_._": {}
+          "build/netcoreapp3.1/Microsoft.TestPlatform.TestHost.props": {}
         }
       },
       "Microsoft.Win32.Primitives/4.3.0": {
@@ -1647,10 +1655,12 @@
           "xunit.extensibility.execution": "[2.4.2]"
         },
         "build": {
-          "build/_._": {}
+          "build/xunit.core.props": {},
+          "build/xunit.core.targets": {}
         },
         "buildMultiTargeting": {
-          "buildMultiTargeting/_._": {}
+          "buildMultiTargeting/xunit.core.props": {},
+          "buildMultiTargeting/xunit.core.targets": {}
         }
       },
       "xunit.extensibility.core/2.4.2": {
@@ -1687,23 +1697,74 @@
           }
         }
       },
-      "WebApp_firstMVC.Tests/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Microsoft.NET.Test.Sdk": "17.7.1",
-          "xunit": "2.4.2"
-        },
+      "xunit.runner.visualstudio/2.4.5": {
+        "type": "package",
         "compile": {
-          "bin/placeholder/WebApp_firstMVC.Tests.dll": {}
+          "lib/netcoreapp3.1/_._": {}
         },
         "runtime": {
-          "bin/placeholder/WebApp_firstMVC.Tests.dll": {}
+          "lib/netcoreapp3.1/_._": {}
+        },
+        "build": {
+          "build/netcoreapp3.1/xunit.runner.visualstudio.props": {}
         }
       }
     }
   },
   "libraries": {
+    "coverlet.collector/3.2.0": {
+      "sha512": "xjY8xBigSeWIYs4I7DgUHqSNoGqnHi7Fv7/7RZD02rvZyG3hlsjnQKiVKVWKgr9kRKgmV+dEfu8KScvysiC0Wg==",
+      "type": "package",
+      "path": "coverlet.collector/3.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/netstandard1.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "build/netstandard1.0/Microsoft.CSharp.dll",
+        "build/netstandard1.0/Microsoft.DotNet.PlatformAbstractions.dll",
+        "build/netstandard1.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "build/netstandard1.0/Microsoft.Extensions.DependencyInjection.dll",
+        "build/netstandard1.0/Microsoft.Extensions.DependencyModel.dll",
+        "build/netstandard1.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "build/netstandard1.0/Microsoft.TestPlatform.CoreUtilities.dll",
+        "build/netstandard1.0/Microsoft.TestPlatform.PlatformAbstractions.dll",
+        "build/netstandard1.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll",
+        "build/netstandard1.0/Mono.Cecil.Mdb.dll",
+        "build/netstandard1.0/Mono.Cecil.Pdb.dll",
+        "build/netstandard1.0/Mono.Cecil.Rocks.dll",
+        "build/netstandard1.0/Mono.Cecil.dll",
+        "build/netstandard1.0/Newtonsoft.Json.dll",
+        "build/netstandard1.0/NuGet.Frameworks.dll",
+        "build/netstandard1.0/System.AppContext.dll",
+        "build/netstandard1.0/System.Collections.Immutable.dll",
+        "build/netstandard1.0/System.Dynamic.Runtime.dll",
+        "build/netstandard1.0/System.IO.FileSystem.Primitives.dll",
+        "build/netstandard1.0/System.Linq.Expressions.dll",
+        "build/netstandard1.0/System.Linq.dll",
+        "build/netstandard1.0/System.ObjectModel.dll",
+        "build/netstandard1.0/System.Reflection.Emit.ILGeneration.dll",
+        "build/netstandard1.0/System.Reflection.Emit.Lightweight.dll",
+        "build/netstandard1.0/System.Reflection.Emit.dll",
+        "build/netstandard1.0/System.Reflection.Metadata.dll",
+        "build/netstandard1.0/System.Reflection.TypeExtensions.dll",
+        "build/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "build/netstandard1.0/System.Runtime.Serialization.Primitives.dll",
+        "build/netstandard1.0/System.Text.RegularExpressions.dll",
+        "build/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "build/netstandard1.0/System.Threading.dll",
+        "build/netstandard1.0/System.Xml.ReaderWriter.dll",
+        "build/netstandard1.0/System.Xml.XDocument.dll",
+        "build/netstandard1.0/coverlet.collector.deps.json",
+        "build/netstandard1.0/coverlet.collector.dll",
+        "build/netstandard1.0/coverlet.collector.pdb",
+        "build/netstandard1.0/coverlet.collector.targets",
+        "build/netstandard1.0/coverlet.core.dll",
+        "build/netstandard1.0/coverlet.core.pdb",
+        "coverlet-icon.png",
+        "coverlet.collector.3.2.0.nupkg.sha512",
+        "coverlet.collector.nuspec"
+      ]
+    },
     "Microsoft.CodeCoverage/17.7.1": {
       "sha512": "NmGwM2ZJy4CAMdJYIp53opUjnXsMbzASX5oQzgxORicJsgz5Lp50fnRI8OmQ/kYNg6dHfr3IjuUoXbsotDX+KA==",
       "type": "package",
@@ -5406,15 +5467,47 @@
         "xunit.extensibility.execution.nuspec"
       ]
     },
-    "WebApp_firstMVC.Tests/1.0.0": {
-      "type": "project",
-      "path": "../WebApp_firstMVC.Tests/WebApp_firstMVC.Tests.csproj",
-      "msbuildProject": "../WebApp_firstMVC.Tests/WebApp_firstMVC.Tests.csproj"
+    "xunit.runner.visualstudio/2.4.5": {
+      "sha512": "OwHamvBdUKgqsXfBzWiCW/O98BTx81UKzx2bieIOQI7CZFE5NEQZGi8PBQGIKawDW96xeRffiNf20SjfC0x9hw==",
+      "type": "package",
+      "path": "xunit.runner.visualstudio/2.4.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.txt",
+        "build/net462/xunit.abstractions.dll",
+        "build/net462/xunit.runner.reporters.net452.dll",
+        "build/net462/xunit.runner.utility.net452.dll",
+        "build/net462/xunit.runner.visualstudio.props",
+        "build/net462/xunit.runner.visualstudio.testadapter.dll",
+        "build/netcoreapp3.1/xunit.abstractions.dll",
+        "build/netcoreapp3.1/xunit.runner.reporters.netcoreapp10.dll",
+        "build/netcoreapp3.1/xunit.runner.utility.netcoreapp10.dll",
+        "build/netcoreapp3.1/xunit.runner.visualstudio.dotnetcore.testadapter.dll",
+        "build/netcoreapp3.1/xunit.runner.visualstudio.props",
+        "build/uap10.0.16299/xunit.runner.reporters.netstandard15.dll",
+        "build/uap10.0.16299/xunit.runner.utility.netstandard15.dll",
+        "build/uap10.0.16299/xunit.runner.utility.uwp10.dll",
+        "build/uap10.0.16299/xunit.runner.utility.uwp10.pri",
+        "build/uap10.0.16299/xunit.runner.visualstudio.props",
+        "build/uap10.0.16299/xunit.runner.visualstudio.targets",
+        "build/uap10.0.16299/xunit.runner.visualstudio.uwp.testadapter.dll",
+        "build/uap10.0.16299/xunit.runner.visualstudio.uwp.testadapter.pri",
+        "lib/net462/_._",
+        "lib/netcoreapp3.1/_._",
+        "lib/uap10.0.16299/_._",
+        "logo-512-transparent.png",
+        "xunit.runner.visualstudio.2.4.5.nupkg.sha512",
+        "xunit.runner.visualstudio.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "WebApp_firstMVC.Tests >= 1.0.0"
+      "Microsoft.NET.Test.Sdk >= 17.7.1",
+      "coverlet.collector >= 3.2.0",
+      "xunit >= 2.4.2",
+      "xunit.runner.visualstudio >= 2.4.5"
     ]
   },
   "packageFolders": {
@@ -5423,11 +5516,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sazcona\\OneDrive - Odyssey Logistics & Technology Corporation\\Desktop\\sandbox\\WebApplication_firstMVC\\WebApplication_firstMVC\\WebApplication_firstMVC.csproj",
-      "projectName": "WebApplication_firstMVC",
-      "projectPath": "C:\\Users\\sazcona\\OneDrive - Odyssey Logistics & Technology Corporation\\Desktop\\sandbox\\WebApplication_firstMVC\\WebApplication_firstMVC\\WebApplication_firstMVC.csproj",
+      "projectUniqueName": "C:\\Users\\sazcona\\OneDrive - Odyssey Logistics & Technology Corporation\\Desktop\\sandbox\\WebApplication_firstMVC\\WebApp_firstMVC.Tests\\WebApp_firstMVC.Tests.csproj",
+      "projectName": "WebApp_firstMVC.Tests",
+      "projectPath": "C:\\Users\\sazcona\\OneDrive - Odyssey Logistics & Technology Corporation\\Desktop\\sandbox\\WebApplication_firstMVC\\WebApp_firstMVC.Tests\\WebApp_firstMVC.Tests.csproj",
       "packagesPath": "C:\\Users\\sazcona\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sazcona\\OneDrive - Odyssey Logistics & Technology Corporation\\Desktop\\sandbox\\WebApplication_firstMVC\\WebApplication_firstMVC\\obj\\",
+      "outputPath": "C:\\Users\\sazcona\\OneDrive - Odyssey Logistics & Technology Corporation\\Desktop\\sandbox\\WebApplication_firstMVC\\WebApp_firstMVC.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sazcona\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5443,11 +5536,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "C:\\Users\\sazcona\\OneDrive - Odyssey Logistics & Technology Corporation\\Desktop\\sandbox\\WebApplication_firstMVC\\WebApp_firstMVC.Tests\\WebApp_firstMVC.Tests.csproj": {
-              "projectPath": "C:\\Users\\sazcona\\OneDrive - Odyssey Logistics & Technology Corporation\\Desktop\\sandbox\\WebApplication_firstMVC\\WebApp_firstMVC.Tests\\WebApp_firstMVC.Tests.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -5459,6 +5548,28 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "Microsoft.NET.Test.Sdk": {
+            "target": "Package",
+            "version": "[17.7.1, )"
+          },
+          "coverlet.collector": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.2.0, )"
+          },
+          "xunit": {
+            "target": "Package",
+            "version": "[2.4.2, )"
+          },
+          "xunit.runner.visualstudio": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[2.4.5, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -5476,10 +5587,6 @@
             "version": "[6.0.22, 6.0.22]"
           },
           {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.22, 6.0.22]"
-          },
-          {
             "name": "Microsoft.NETCore.App.Ref",
             "version": "[6.0.22, 6.0.22]"
           },
@@ -5489,9 +5596,6 @@
           }
         ],
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
