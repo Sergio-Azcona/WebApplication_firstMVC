@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iLkw5V1N5fv8HmWDN7dMTGft60oJyb9BwJaXcSCduIUOznu16bRU+ehPwFm934ACdd9to4JlSIY0yAd9A5xmfA==",
+  "dgSpecHash": "9DalGDYS/mtR6UM00RnJh0YklUpKNgkcS1D/aCfpMCXtzbgO6bGn9t25+h+7dRsxldkoeqTbxriQsBFbvp5mLg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sazcona\\OneDrive - Odyssey Logistics & Technology Corporation\\Desktop\\sandbox\\WebApplication_firstMVC\\WebApp_firstMVC.Tests\\WebApp_firstMVC.Tests.csproj",
+  "projectFilePath": "C:\\Users\\sazcona\\Desktop\\sandbox2\\Sergio-Azcona\\WebApplication_firstMVC\\WebApp_firstMVC.Tests\\WebApp_firstMVC.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sazcona\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\sazcona\\.nuget\\packages\\microsoft.codecoverage\\17.7.1\\microsoft.codecoverage.17.7.1.nupkg.sha512",
@@ -92,10 +92,7 @@
     "C:\\Users\\sazcona\\.nuget\\packages\\xunit.core\\2.4.2\\xunit.core.2.4.2.nupkg.sha512",
     "C:\\Users\\sazcona\\.nuget\\packages\\xunit.extensibility.core\\2.4.2\\xunit.extensibility.core.2.4.2.nupkg.sha512",
     "C:\\Users\\sazcona\\.nuget\\packages\\xunit.extensibility.execution\\2.4.2\\xunit.extensibility.execution.2.4.2.nupkg.sha512",
-    "C:\\Users\\sazcona\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512",
-    "C:\\Users\\sazcona\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.22\\microsoft.windowsdesktop.app.ref.6.0.22.nupkg.sha512",
-    "C:\\Users\\sazcona\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.22\\microsoft.netcore.app.ref.6.0.22.nupkg.sha512",
-    "C:\\Users\\sazcona\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.22\\microsoft.aspnetcore.app.ref.6.0.22.nupkg.sha512"
+    "C:\\Users\\sazcona\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512"
   ],
   "logs": []
 }

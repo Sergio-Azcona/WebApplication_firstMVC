@@ -5516,11 +5516,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sazcona\\OneDrive - Odyssey Logistics & Technology Corporation\\Desktop\\sandbox\\WebApplication_firstMVC\\WebApp_firstMVC.Tests\\WebApp_firstMVC.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\sazcona\\Desktop\\sandbox2\\Sergio-Azcona\\WebApplication_firstMVC\\WebApp_firstMVC.Tests\\WebApp_firstMVC.Tests.csproj",
       "projectName": "WebApp_firstMVC.Tests",
-      "projectPath": "C:\\Users\\sazcona\\OneDrive - Odyssey Logistics & Technology Corporation\\Desktop\\sandbox\\WebApplication_firstMVC\\WebApp_firstMVC.Tests\\WebApp_firstMVC.Tests.csproj",
+      "projectPath": "C:\\Users\\sazcona\\Desktop\\sandbox2\\Sergio-Azcona\\WebApplication_firstMVC\\WebApp_firstMVC.Tests\\WebApp_firstMVC.Tests.csproj",
       "packagesPath": "C:\\Users\\sazcona\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sazcona\\OneDrive - Odyssey Logistics & Technology Corporation\\Desktop\\sandbox\\WebApplication_firstMVC\\WebApp_firstMVC.Tests\\obj\\",
+      "outputPath": "C:\\Users\\sazcona\\Desktop\\sandbox2\\Sergio-Azcona\\WebApplication_firstMVC\\WebApp_firstMVC.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sazcona\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5581,26 +5581,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.22, 6.0.22]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.22, 6.0.22]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.22, 6.0.22]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

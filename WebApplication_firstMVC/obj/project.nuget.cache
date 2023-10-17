@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UctOjXQWuk1iT4E71hRcFQMzYdx5x9NIXiUT2Ze6HldLKEl2mqtxzURH5ugyMnzuYBJBWKdo9jRLePFvfmD2Iw==",
+  "dgSpecHash": "wrh3nTgLLexwxDF/uO0YdmU9pHc/GJn2mm/c1yB/AI6yjg50usXM5x++7hPaBN+23vmHC4KN16GLFyYfEAKaTQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sazcona\\OneDrive - Odyssey Logistics & Technology Corporation\\Desktop\\sandbox\\WebApplication_firstMVC\\WebApplication_firstMVC\\WebApplication_firstMVC.csproj",
+  "projectFilePath": "C:\\Users\\sazcona\\Desktop\\sandbox2\\Sergio-Azcona\\WebApplication_firstMVC\\WebApplication_firstMVC\\WebApplication_firstMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sazcona\\.nuget\\packages\\microsoft.codecoverage\\17.7.1\\microsoft.codecoverage.17.7.1.nupkg.sha512",
     "C:\\Users\\sazcona\\.nuget\\packages\\microsoft.net.test.sdk\\17.7.1\\microsoft.net.test.sdk.17.7.1.nupkg.sha512",
@@ -90,11 +90,7 @@
     "C:\\Users\\sazcona\\.nuget\\packages\\xunit.assert\\2.4.2\\xunit.assert.2.4.2.nupkg.sha512",
     "C:\\Users\\sazcona\\.nuget\\packages\\xunit.core\\2.4.2\\xunit.core.2.4.2.nupkg.sha512",
     "C:\\Users\\sazcona\\.nuget\\packages\\xunit.extensibility.core\\2.4.2\\xunit.extensibility.core.2.4.2.nupkg.sha512",
-    "C:\\Users\\sazcona\\.nuget\\packages\\xunit.extensibility.execution\\2.4.2\\xunit.extensibility.execution.2.4.2.nupkg.sha512",
-    "C:\\Users\\sazcona\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.22\\microsoft.windowsdesktop.app.ref.6.0.22.nupkg.sha512",
-    "C:\\Users\\sazcona\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.22\\microsoft.netcore.app.ref.6.0.22.nupkg.sha512",
-    "C:\\Users\\sazcona\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.22\\microsoft.aspnetcore.app.ref.6.0.22.nupkg.sha512",
-    "C:\\Users\\sazcona\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.22\\microsoft.netcore.app.host.win-x64.6.0.22.nupkg.sha512"
+    "C:\\Users\\sazcona\\.nuget\\packages\\xunit.extensibility.execution\\2.4.2\\xunit.extensibility.execution.2.4.2.nupkg.sha512"
   ],
   "logs": []
 }
