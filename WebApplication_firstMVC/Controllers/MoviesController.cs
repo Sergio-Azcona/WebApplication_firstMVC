@@ -8,7 +8,6 @@ namespace WebApplication_firstMVC.Controllers
     {
         public IActionResult Index()
         {
-
             return View();
         }
 
