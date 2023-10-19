@@ -17,7 +17,7 @@ namespace WebApplication_firstMVC.Controllers
         // 
         // GET: /HelloWorld/Welcome/ 
 
-        public IActionResult Welcome(string name, int numTimes = 1)
+        public IActionResult Welcome(string name, int numTimes = 2)
         {
             ViewData["Message"] = "Hello " + name;
             ViewData["NumTimes"] = numTimes;
