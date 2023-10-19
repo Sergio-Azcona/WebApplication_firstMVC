@@ -17,12 +17,12 @@ namespace WebApplication_firstMVC.Controllers
         // 
         // GET: /HelloWorld/Welcome/ 
 
-        public string Welcome(string name)
+        public IActionResult Welcome(string name, int numTimes = 1)
         {
-            Console.Write("What is your name? ");
-            name = Console.ReadLine();
-            return HtmlEncoder.Default.Encode($"Hello, {name}! This is the Welcome action method. Your ID is {ID}"); 
-                //$(".... The numTimes is: {numTimes}");
+            ViewData["Message"] = "Hello " + name;
+            ViewData["NumTimes"] = numTimes;
+
+            return View();
         }
     }
 }

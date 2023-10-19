@@ -1,0 +1,16 @@
+﻿*.dll
+*.vxidx
+*.pdb
+*.nupkg
+*.cache
+*.vs/
+*.bin/
+*.use
+*.idea/
+*.vscode/
+*.userprefs
+
+packages/
+bower_components/
+node_modules/
+
