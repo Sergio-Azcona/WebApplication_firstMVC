@@ -1,3 +1,5 @@
+//resource: https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -25,7 +27,12 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.MapControllerRoute(
-    name: "movies",
+    name: "default",
+    pattern: "{controller=HelloWorld}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "helloworld",
     pattern: "{controller=Movies}/{action=Index}/{id?}");
+
 
 app.Run();

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WNUrdRv7KHgeZwbwI62vRPTesitZV3PPVXmNpFKtCiAOg+Dn3HL+KIrRca5lX5LxlCX1dX8kxpSiS7N/RdlHGQ==",
+  "dgSpecHash": "sN1g+VlKkaWJ8jT5oYd6L/dAJku4a7RrqTkwCbcGQGsi5MBvnwtBBumXTKbHGg6nlJR45lh1DanMTFXp9zKNWg==",
   "success": true,
   "projectFilePath": "C:\\Users\\sazcona\\OneDrive - Odyssey Logistics & Technology Corporation\\Desktop\\sandbox\\WebApplication_firstMVC\\WebApplication_firstMVC\\WebApplication_firstMVC.csproj",
   "expectedPackageFiles": [
@@ -102,11 +102,7 @@
     "C:\\Users\\sazcona\\.nuget\\packages\\xunit.assert\\2.4.2\\xunit.assert.2.4.2.nupkg.sha512",
     "C:\\Users\\sazcona\\.nuget\\packages\\xunit.core\\2.4.2\\xunit.core.2.4.2.nupkg.sha512",
     "C:\\Users\\sazcona\\.nuget\\packages\\xunit.extensibility.core\\2.4.2\\xunit.extensibility.core.2.4.2.nupkg.sha512",
-    "C:\\Users\\sazcona\\.nuget\\packages\\xunit.extensibility.execution\\2.4.2\\xunit.extensibility.execution.2.4.2.nupkg.sha512",
-    "C:\\Users\\sazcona\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.22\\microsoft.windowsdesktop.app.ref.6.0.22.nupkg.sha512",
-    "C:\\Users\\sazcona\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.22\\microsoft.netcore.app.ref.6.0.22.nupkg.sha512",
-    "C:\\Users\\sazcona\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.22\\microsoft.aspnetcore.app.ref.6.0.22.nupkg.sha512",
-    "C:\\Users\\sazcona\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.22\\microsoft.netcore.app.host.win-x64.6.0.22.nupkg.sha512"
+    "C:\\Users\\sazcona\\.nuget\\packages\\xunit.extensibility.execution\\2.4.2\\xunit.extensibility.execution.2.4.2.nupkg.sha512"
   ],
   "logs": []
 }
