@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Q/bxzg6+tWyd9oMVt5D1ajrkx/Ff8gLMuHta8prRYh2EdGJITo6iuoIME6sQC/Qkho/Boy5eaYTUQtG1GWNMFw==",
+  "dgSpecHash": "Wmn9ESNuydi4XQYZTioxE9w4vdXsp8dak8HI+OWiPtLgfvsXwFM9O8httcsgsuDkfqQj+nVg+ZiVUz2CvvdQjw==",
   "success": true,
   "projectFilePath": "C:\\Users\\sazcona\\OneDrive - Odyssey Logistics & Technology Corporation\\Desktop\\sandbox\\WebApplication_firstMVC\\WebApp_firstMVC.Tests\\WebApp_firstMVC.Tests.csproj",
   "expectedPackageFiles": [
@@ -104,10 +104,7 @@
     "C:\\Users\\sazcona\\.nuget\\packages\\xunit.core\\2.4.2\\xunit.core.2.4.2.nupkg.sha512",
     "C:\\Users\\sazcona\\.nuget\\packages\\xunit.extensibility.core\\2.4.2\\xunit.extensibility.core.2.4.2.nupkg.sha512",
     "C:\\Users\\sazcona\\.nuget\\packages\\xunit.extensibility.execution\\2.4.2\\xunit.extensibility.execution.2.4.2.nupkg.sha512",
-    "C:\\Users\\sazcona\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512",
-    "C:\\Users\\sazcona\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.22\\microsoft.windowsdesktop.app.ref.6.0.22.nupkg.sha512",
-    "C:\\Users\\sazcona\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.22\\microsoft.netcore.app.ref.6.0.22.nupkg.sha512",
-    "C:\\Users\\sazcona\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.22\\microsoft.aspnetcore.app.ref.6.0.22.nupkg.sha512"
+    "C:\\Users\\sazcona\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512"
   ],
   "logs": []
 }
