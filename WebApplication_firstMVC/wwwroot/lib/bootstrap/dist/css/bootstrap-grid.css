@@ -1361,6 +1361,8 @@
 
 .d-table-cell {
   display: table-cell !important;
+  color: azure;
+  font-palette: light;
 }
 
 .d-flex {
@@ -4979,6 +4981,7 @@
 
   .d-print-table-cell {
     display: table-cell !important;
+    color: azure;
   }
 
   .d-print-flex {

@@ -5,6 +5,7 @@ a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
+
 }
 
 a {
@@ -24,7 +25,7 @@ a {
 }
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
 }
 .border-bottom {
   border-bottom: 1px solid #e5e5e5;
@@ -40,6 +41,7 @@ button.accept-policy {
 }
 
 .footer {
+  color: white;
   position: absolute;
   bottom: 0;
   width: 100%;

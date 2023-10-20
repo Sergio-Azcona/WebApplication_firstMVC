@@ -1957,7 +1957,7 @@ progress {
   --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
   width: 100%;
   margin-bottom: 1rem;
-  color: #212529;
+  color: white !important;
   vertical-align: top;
   border-color: #dee2e6;
 }
@@ -2019,7 +2019,7 @@ progress {
   --bs-table-active-color: #000;
   --bs-table-hover-bg: #bfd1ec;
   --bs-table-hover-color: #000;
-  color: #000;
+  color: lightgray;
   border-color: #bacbe6;
 }
 
@@ -2031,7 +2031,7 @@ progress {
   --bs-table-active-color: #000;
   --bs-table-hover-bg: #d1d2d4;
   --bs-table-hover-color: #000;
-  color: #000;
+  color: lightgray;
   border-color: #cbccce;
 }
 
@@ -2043,7 +2043,7 @@ progress {
   --bs-table-active-color: #000;
   --bs-table-hover-bg: #c1d6cc;
   --bs-table-hover-color: #000;
-  color: #000;
+  color: lightgray;
   border-color: #bcd0c7;
 }
 
@@ -2103,9 +2103,13 @@ progress {
   --bs-table-active-color: #fff;
   --bs-table-hover-bg: #323539;
   --bs-table-hover-color: #fff;
-  color: #fff;
+  color: azure !important;
   border-color: #373b3e;
 }
+.table.table-dark {
+    color: white !important;
+}
+
 
 .table-responsive {
   overflow-x: auto;

@@ -6,7 +6,7 @@ html {
   html {
     font-size: 16px;
     font-style: unset;
-    background-color: black;
+    
   }
 }
 
@@ -20,4 +20,8 @@ body {
     background-color: black;
     font-style: unset;
     color: snow;
+}
+
+table {
+    color: white;
 }
