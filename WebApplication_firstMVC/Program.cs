@@ -1,6 +1,15 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using WebApplication_firstMVC.Data;
 //resource: https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio 
 
 var builder = WebApplication.CreateBuilder(args);
+//resource: https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio 
+
+builder.Services.AddDbContext<WebApplication_firstMVCContext>(options =>
+//resource: https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio 
+
+    options.UseSqlServer(builder.Configuration.GetConnectionString("WebApplication_firstMVCContext") ?? throw new InvalidOperationException("Connection string 'WebApplication_firstMVCContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
