@@ -4,13 +4,16 @@
 *.nupkg
 *.cache
 *.vs/
+.vs/**
 *.bin/
-*.use
+*.user
 *.idea/
+*.txt
+*.pdf
 *.vscode/
 *.userprefs
 
-packages/
+packages/**
 bower_components/
 node_modules/
 
