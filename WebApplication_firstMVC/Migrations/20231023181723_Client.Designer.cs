@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebApplication_firstMVC.Data;
 
@@ -11,9 +12,11 @@ using WebApplication_firstMVC.Data;
 namespace WebApplication_firstMVC.Migrations
 {
     [DbContext(typeof(WebApplication_firstMVCContext))]
-    partial class WebApplication_firstMVCContextModelSnapshot : ModelSnapshot
+    [Migration("20231023181723_Client")]
+    partial class Client
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -37,9 +40,6 @@ namespace WebApplication_firstMVC.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("URL")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("WebSite")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

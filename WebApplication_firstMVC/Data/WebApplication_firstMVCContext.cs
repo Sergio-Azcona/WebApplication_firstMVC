@@ -15,5 +15,7 @@ namespace WebApplication_firstMVC.Data
         }
 
         public DbSet<WebApplication_firstMVC.Models.Movie> Movie { get; set; } = default!;
+
+        public DbSet<WebApplication_firstMVC.Models.Client> Client { get; set; }
     }
 }
