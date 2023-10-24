@@ -1,15 +1,16 @@
 ﻿@model IEnumerable<WebApplication_firstMVC.Models.Movie>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Movie List";
 }
 
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Create New Movie</a> 
 </p>
- <table class="table">
+        
+<table class="table">
     <thead>
         <tr>
             <th>
@@ -57,3 +58,8 @@
 }
     </tbody>
 </table>
+
+<p style="text-align: center">
+    <img src="https://open-stand.org/wp-content/uploads/2016/04/International-Union-of-Cinemas-Calls-for-Open-Standards-in-the-Cinema-Industry.jpg" alt="theater"
+         width=25%; height=auto; />
+</p>
