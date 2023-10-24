@@ -6,6 +6,7 @@ a.navbar-brand[b-bvat0tn3xo] {
   white-space: normal;
   text-align: center;
   word-break: break-all;
+
 }
 
 a[b-bvat0tn3xo] {
@@ -25,7 +26,7 @@ a[b-bvat0tn3xo] {
 }
 
 .border-top[b-bvat0tn3xo] {
-  border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
 }
 .border-bottom[b-bvat0tn3xo] {
   border-bottom: 1px solid #e5e5e5;
@@ -41,6 +42,7 @@ button.accept-policy[b-bvat0tn3xo] {
 }
 
 .footer[b-bvat0tn3xo] {
+  color: white;
   position: absolute;
   bottom: 0;
   width: 100%;
