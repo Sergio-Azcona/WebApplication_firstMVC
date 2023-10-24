@@ -31,13 +31,12 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Name)
+                <a href="@Html.DisplayFor(modelItem => item.WebSite)" target="_blank">@Html.DisplayFor(modelItem => item.Name)</a>
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.WebSite)
-            </td>
-            <td>
-                    @Html.DisplayFor(modelItem => <img scr="item.URL" alt="client logo" width=25%; height=auto;> )
+                <p style="text-align: center">
+                    <img src="@Html.DisplayFor(modelItem => item.URL)" width=20% height=auto>
+                </p>
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.ServiceCenter)

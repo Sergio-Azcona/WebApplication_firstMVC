@@ -54,7 +54,7 @@ namespace WebApplication_firstMVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,URL,ServiceCenter")] Client client)
+        public async Task<IActionResult> Create([Bind("Id,Name,WebSite,URL,ServiceCenter")] Client client)
         {
             if (ModelState.IsValid)
             {
