@@ -21,7 +21,8 @@ using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
 
-    SeedData.Initialize(services);
+    //SeedData.Initialize(services); //activate when seed data ready to add
+
 }
 
 // Configure the HTTP request pipeline.
