@@ -33,8 +33,7 @@ namespace WebApplication_firstMVC.Controllers
                 return NotFound();
             }
 
-            var client = await _context.Client
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var client = await _context.Client.FindAsync(id);
             if (client == null)
             {
                 return NotFound();
@@ -124,8 +123,7 @@ namespace WebApplication_firstMVC.Controllers
                 return NotFound();
             }
 
-            var client = await _context.Client
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var client = await _context.Client.FindAsync(id);
             if (client == null)
             {
                 return NotFound();

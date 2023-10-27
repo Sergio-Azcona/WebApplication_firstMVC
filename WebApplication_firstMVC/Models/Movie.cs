@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
+
 namespace WebApplication_firstMVC.Models
 {
     public class Movie
@@ -18,6 +19,5 @@ namespace WebApplication_firstMVC.Models
         //[Column(Type = Decimal)]
         public decimal? Price { get; set; }
         public string? Rating { get; set; }
-
     }
 }

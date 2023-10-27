@@ -11,6 +11,7 @@ namespace WebApplication_firstMVC.Models
         public string WebSite { get; set; }
         [DisplayName("Company Logo")]// amend column header display name
         public string URL{ get; set; }
+        [DisplayName("Service Center")]// amend column header display name
         public string ServiceCenter { get; set; }
     }
 }
