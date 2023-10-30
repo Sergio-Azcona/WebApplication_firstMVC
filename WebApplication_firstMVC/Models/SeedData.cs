@@ -4,7 +4,9 @@ using WebApplication_firstMVC.Data;
 using System;
 using System.Linq;
 using WebApplication_firstMVC.Models;
+using Microsoft.Extensions.DependencyModel;
 
+//resource: https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/working-with-sql?view=aspnetcore-7.0&tabs=visual-studio
 public class SeedData
 {
     public static void Initialize(IServiceProvider serviceProvider)
@@ -13,9 +15,9 @@ public class SeedData
             serviceProvider.GetRequiredService<
                 DbContextOptions<WebApplication_firstMVCContext>>()))
         {
-            if (context.Movie.Any())
+            if (context.Movie.Any()) // If there are any movies in the database, the seed initializer returns and no movies are added.
             {
-                return;   // DB has been seeded
+                return;   // return without execting the remaining code
             }
             context.Movie.AddRange(
                 new Movie
