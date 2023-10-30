@@ -21,7 +21,7 @@ using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
 
-    //SeedData.Initialize(services); //activate when seed data ready to add
+    SeedData.Initialize(services); //activate when seed data ready to add
 
 }
 
