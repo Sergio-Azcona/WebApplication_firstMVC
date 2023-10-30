@@ -19,5 +19,6 @@ namespace WebApplication_firstMVC.Models
         //[Column(Type = Decimal)]
         public decimal? Price { get; set; }
         public string? Rating { get; set; }
+        public string? Language { get; set; }
     }
 }

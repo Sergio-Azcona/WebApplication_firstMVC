@@ -14,8 +14,8 @@
     <p>
         <b>Genre:</b>
         <select asp-for="MovieGenre" asp-items="Model.Genres">
-        <option value=""> </option>
-    </select>
+            <option value=""> </option>
+        </select>
 
         &nbsp;
         <b>Search Title:</b> <input type="text" name="searchString" />
@@ -23,7 +23,6 @@
         &nbsp; <i>To Return All: Leave Empty</i>
     </p>
 </form>
-
         
 <table class="table">
     <thead>
@@ -42,6 +41,9 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Movies![0].Rating)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movies![0].Language)
             </th>
             <th></th>
         </tr>
@@ -64,6 +66,10 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Rating)
             </td>
+            <td>    
+                @Html.DisplayFor(modelItem => item.Language)
+            </td>
+
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
