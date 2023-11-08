@@ -6,8 +6,8 @@ namespace WebApplication_firstMVC.Interfaces
     {
         Task<List<Holiday>> GetHolidays(int year, string countryCode);
 
-        Task<List<Holiday>> GetLongWeekends(int year, string countryCode);
+        //Task<List<Holiday>> GetLongWeekends(int year, string countryCode);
 
-        Task<List<Holiday>> GetInternationalHolidays();
+        //Task<List<Holiday>> GetInternationalHolidays();
     }
 }

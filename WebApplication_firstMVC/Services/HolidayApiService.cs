@@ -18,7 +18,7 @@ namespace WebApplication_firstMVC.Services
 
         public async Task<List<Holiday>> GetHolidays(int year, string countryCode)
         {
-            var url = string.Format($"/api/v3/{year}/{countryCode}");
+            var url = string.Format($"api/v3/publicholidays/{year}/{countryCode}");
             var results = new List<Holiday>();
             var response = await client.GetAsync(url);
 
@@ -26,7 +26,9 @@ namespace WebApplication_firstMVC.Services
             {
                 var stringResponse =  await response.Content.ReadAsStringAsync();
 
-                results = JsonSerializer.Deserialize<List<Holiday>>(stringResponse);
+                //results = JsonSerializer.Deserialize<List<Holiday>>(stringResponse);
+                results = JsonSerializer.Deserialize<List<Holiday>>(stringResponse,
+                           new JsonSerializerOptions() { PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
             }
             else
             {
@@ -36,47 +38,47 @@ namespace WebApplication_firstMVC.Services
             return results;
         }
 
-        public async Task<List<Holiday>> GetLongWeekends(int year, string countryCode)
-        {
-            var url = string.Format($"/api/v3/LongWeekend/{year}/{countryCode}");
-            var results = new List<Holiday>();
-            var response = await client.GetAsync(url);
+        //public async Task<List<Holiday>> GetLongWeekends(int year, string countryCode)
+        //{
+        //    var url = string.Format($"/api/v3/LongWeekend/{year}/{countryCode}");
+        //    var results = new List<Holiday>();
+        //    var response = await client.GetAsync(url);
 
-            if (response.IsSuccessStatusCode)
-            {
-                var stringResponse = await response.Content.ReadAsStringAsync();
+        //    if (response.IsSuccessStatusCode)
+        //    {
+        //        var stringResponse = await response.Content.ReadAsStringAsync();
 
-                results = JsonSerializer.Deserialize<List<Holiday>>(stringResponse);
-            }
-            else
-            {
-                throw new HttpRequestException(response.ReasonPhrase);
-            }
+        //        results = JsonSerializer.Deserialize<List<Holiday>>(stringResponse);
+        //    }
+        //    else
+        //    {
+        //        throw new HttpRequestException(response.ReasonPhrase);
+        //    }
 
-            return results;
+        //    return results;
 
-        }
+        //}
 
-        public async Task<List<Holiday>> GetInternationalHolidays()
-        {
-            var url = string.Format($"/api/v3/NextPublicHolidaysWorldwide");
-            var results = new List<Holiday>();
-            var response = await client.GetAsync(url);
+        //public async Task<List<Holiday>> GetInternationalHolidays()
+        //{
+        //    var url = string.Format($"/api/v3/NextPublicHolidaysWorldwide");
+        //    var results = new List<Holiday>();
+        //    var response = await client.GetAsync(url);
 
-            if (response.IsSuccessStatusCode)
-            {
-                var stringResponse = await response.Content.ReadAsStringAsync();
+        //    if (response.IsSuccessStatusCode)
+        //    {
+        //        var stringResponse = await response.Content.ReadAsStringAsync();
 
-                results = JsonSerializer.Deserialize<List<Holiday>>(stringResponse);
-            }
-            else
-            {
-                throw new HttpRequestException(response.ReasonPhrase);
-            }
+        //        results = JsonSerializer.Deserialize<List<Holiday>>(stringResponse);
+        //    }
+        //    else
+        //    {
+        //        throw new HttpRequestException(response.ReasonPhrase);
+        //    }
 
-            return results;
+        //    return results;
 
-        }
+        //}
 
     }
 }
