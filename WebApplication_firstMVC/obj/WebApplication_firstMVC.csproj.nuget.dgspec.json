@@ -44,6 +44,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.12, )"
@@ -71,6 +75,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.16, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [
@@ -132,6 +140,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.12, )"
@@ -139,6 +151,10 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.7.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -148,13 +164,13 @@
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.4.2, )"
+              "version": "[2.5.3, )"
             },
             "xunit.runner.visualstudio": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.4.5, )"
+              "version": "[2.5.3, )"
             }
           },
           "imports": [

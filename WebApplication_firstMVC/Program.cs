@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using WebApplication_firstMVC.Data;
 using WebApplication_firstMVC.Models;
+using WebApplication_firstMVC.Services;
 //resource: https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,8 @@ builder.Services.AddDbContext<WebApplication_firstMVCContext>(options =>
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton<WebApplication_firstMVC.Interfaces.IHolidayService, WebApplication_firstMVC.Services.HolidayApiService>();
+
 
 var app = builder.Build();
 

@@ -66,7 +66,8 @@ namespace WebApplication_firstMVC.Controllers
             }
 
             var movie = await _context.Movie
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.Id == id); 
+                // FirstOrDefaultAsync: security feature built into method is that the code verifies that the search method has found a movie before it tries to do anything with it. 
             if (movie == null)
             {
                 return NotFound();
