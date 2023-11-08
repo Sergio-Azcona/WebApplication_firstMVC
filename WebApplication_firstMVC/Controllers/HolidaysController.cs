@@ -23,9 +23,10 @@ namespace WebApplication_firstMVC.Controllers
             //countryCode = countryCode.ToLower();
             List<Holiday> holidays = new List<Holiday>();
             holidays = await _holidayService.GetHolidays(year, countryCode);
-
-
-            return View(holidays);
+            
+            var nationalHolidays = holidays.Where(holiday => holiday.National == true).ToList();
+            
+            return View(nationalHolidays);
         }
     }
 }

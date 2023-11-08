@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-using System.Runtime.Serialization.Json;
-using System.Text.Json;
+﻿using System.Text.Json;
 using WebApplication_firstMVC.Interfaces;
 using WebApplication_firstMVC.Models;
 
@@ -41,7 +39,7 @@ namespace WebApplication_firstMVC.Services
                 results2 = JsonSerializer.Deserialize<List<Holiday>>(stringResponse, 
                            new JsonSerializerOptions() { PropertyNamingPolicy = null } );
 
-                // use the following code if i did NOT use JsonPropertyName in model; this is for camelCase serialization:
+                // use the following code if i did NOT use JsonPropertyName in model; this is for camelCase serialization, which PropertyNamingPolicy addresses:
                 //results3 = JsonSerializer.Deserialize<List<HolidayModel>>(stringResponse,
                 //        new JsonSerializerOptions() { PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
             }
