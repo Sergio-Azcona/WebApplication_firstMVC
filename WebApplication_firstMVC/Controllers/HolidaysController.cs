@@ -14,38 +14,24 @@ namespace WebApplication_firstMVC.Controllers
         {
             _holidayService = holidayApiService;
         }
-
         public async Task<IActionResult> Index(int year, string countryCode)
         {
-            if (string.IsNullOrEmpty(countryCode) && int.)
+            if (string.IsNullOrEmpty(countryCode))
             {
                 return View();
             }
             else
             {
-                // check to see if year and countryCode are null
+                // to do: in View > form: add year drop down (from 1973 to present year - Desc? )
 
-                //year = 2023;
-                //countryCode = "us";
-                //ViewBag["CountryCode"] = countryCode;
-                //ViewBag["Year"] = year;
                 countryCode = countryCode.ToLower();
                 List<Holiday> holidays = new List<Holiday>();
                 holidays = await _holidayService.GetHolidays(year, countryCode);
 
                 var nationalHolidays = holidays.Where(holiday => holiday.National == true).ToList();
 
-                //if (nationalHolidays.Count > 0)
-                //{
-                    return View(nationalHolidays);
-                //}
-
+                return View(nationalHolidays);
             }
-
-            //else
-            //{
-            //    return View();
-            //}
 
         }
     }

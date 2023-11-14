@@ -3,6 +3,8 @@ This project was built using the ASP.NET Core MVC tutorial found on this site:
 https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-7.0&tabs=visual-studio
 
 Additional resource: https://launch.turing.edu/module1/
+Consuming 3rd party api: https://www.ezzylearning.net/tutorial/how-to-consume-third-party-web-apis-in-asp-net-core
+Holidays API docs: https://date.nager.at/Api
 
 Creating additonal Migrations:
 -installed `dotnet-ef` tool using: dotnet tool install --global dotnet-ef
