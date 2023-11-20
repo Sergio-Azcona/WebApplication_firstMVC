@@ -19,7 +19,7 @@ builder.Services.AddSingleton<WebApplication_firstMVC.Interfaces.IHolidayService
 // add DB connection
 builder.Services.AddDbContext<ClientContext>(options =>
 {
-    options.UseSqlServer("CMCNM130"); //add connection stream
+    options.UseSqlServer("Server=.;Database=CMCNM130;Trusted_Connection=True;"); //add connection stream
 });
 
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -57,6 +58,10 @@ namespace WebApplication_firstMVC.Controllers
         {
             if (ModelState.IsValid)
             {
+
+                //var newClient = ClientSerice.CreateClient(client);
+
+
                 _context.Add(client);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
