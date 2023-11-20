@@ -16,6 +16,11 @@ builder.Services.AddDbContext<WebApplication_firstMVCContext>(options =>
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<WebApplication_firstMVC.Interfaces.IHolidayService, WebApplication_firstMVC.Services.HolidayApiService>();
+// add DB connection
+builder.Services.AddDbContext<ClientContext>(options =>
+{
+    options.UseSqlServer("CMCNM130"); //add connection stream
+});
 
 
 var app = builder.Build();
