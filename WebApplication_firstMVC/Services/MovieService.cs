@@ -70,10 +70,6 @@ namespace WebApplication_firstMVC.Services
                     throw new HttpRequestException($"Request failed with status code {response.StatusCode}");
                 }
             }
-
-
         }
-
-
     }
 }

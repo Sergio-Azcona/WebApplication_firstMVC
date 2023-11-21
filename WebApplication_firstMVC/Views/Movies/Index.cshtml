@@ -9,7 +9,6 @@
     <a asp-action="Create">Create New Movie</a> 
 </p>
 
-
 <form asp-asp-controller="Movies" asp-action="Index" method="get"> @*add "method" so that filter param are reflected in the URI*@
     <p>
         <b>Genre:</b>
@@ -23,7 +22,8 @@
         &nbsp; <i>To Return All: Leave Empty</i>
     </p>
 </form>
-        
+
+
 <table class="table">
     <thead>
         <tr>
@@ -79,6 +79,24 @@
 }
     </tbody>
 </table>
+
+<center>
+<h3>Seach For New Movies</h3>
+    <form asp-controller="Movies" asp-action="SearchMovie">
+        <table>
+            <tr>Movie title:</tr>
+            <tr><input type="text" id="name" name="title"</tr>
+            &nbsp;&nbsp;
+            <tr>Movie language</tr>
+            <tr><input type="text" id="language" name="language"</tr>
+            &nbsp;&nbsp;
+            <tr>Movie Release Year (aproximate)</tr>
+            <tr><input type="text" id="year" name="Year"</tr>
+
+            <td><input type="submit" value="Submit" /></td>
+        </table>
+    </form>
+</center>
 
 <p style="text-align: center">
     <img src="https://open-stand.org/wp-content/uploads/2016/04/International-Union-of-Cinemas-Calls-for-Open-Standards-in-the-Cinema-Industry.jpg" alt="theater"
