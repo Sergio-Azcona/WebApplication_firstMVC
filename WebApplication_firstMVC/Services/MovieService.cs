@@ -26,18 +26,18 @@ namespace WebApplication_firstMVC.Services
             return client;
         }
 
-            public static async Task<List<Movie>> SearchMoviesAsync(string name, string language, string year = null)
+            public static async Task<List<Movie>> SearchMoviesAsync(string title, string language, string year = null)
         {
             var queryParams = new List<KeyValuePair<string, string>>();
 
             //evaluate params and include them int the query string if not null/empty
-            if (string.IsNullOrEmpty(name))
+            if (string.IsNullOrEmpty(title))
             {
-                throw new ArgumentException("Movie Name Required", nameof(name));
+                throw new ArgumentException("Movie Name Required", nameof(title));
             }
             else
             {
-                queryParams.Add(new KeyValuePair<string, string>("query", name));
+                queryParams.Add(new KeyValuePair<string, string>("query", title));
             }
 
             if (!string.IsNullOrEmpty(language))

@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using WebApplication_firstMVC.Data;
 using WebApplication_firstMVC.Models;
+using WebApplication_firstMVC.Services;
 using WebApplication_firstMVC.ViewModels;
 
 namespace WebApplication_firstMVC.Controllers
@@ -80,6 +81,21 @@ namespace WebApplication_firstMVC.Controllers
         public IActionResult Create()
         {
             return View();
+        }
+
+
+        public async Task<IActionResult> SearchMovies(string title, string language, string year)
+        {
+            var movies = MovieService.SearchMoviesAsync(title, language, year); 
+            
+            if (movies == null)
+            {  
+                return NotFound(); 
+            }
+            else 
+            { 
+                return View(movies); 
+            }
         }
 
         // POST: Movies/Create
